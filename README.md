@@ -4,7 +4,7 @@ A modern, responsive single-page marketing website for the SyncNext headless Con
 
 ## About SyncNext
 
-SyncNext is a modern headless Contentful setup that combines the power of Contentful as a backend CMS with Next.js for the frontend, all containerized using DDEV for consistent development environments.
+SyncNext bridges Contentful's powerful content modeling with Next.js performance for faster time-to-market and exceptional digital experiences, all containerized using DDEV for consistent development environments.
 
 ## Features
 

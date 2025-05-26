@@ -153,11 +153,11 @@ function App() {
               Headless CMS Starter Kit
             </span>
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-7xl">
-              <span className="block bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-transparent bg-clip-text pb-2 animate-gradient bg-[length:200%_auto]">Modern Headless Contentful</span>
-              <span className="block">Made Simple</span>
+              <span className="block bg-gradient-to-r from-purple-500 via-purple-600 to-purple-700 text-transparent bg-clip-text pb-2 animate-gradient bg-[length:200%_auto]">Structured Content,</span>
+              <span className="block">Accelerated Delivery</span>
             </h1>
             <p className="mt-6 max-w-md mx-auto text-base md:text-lg text-gray-600 sm:max-w-3xl px-4">
-              SyncNext combines the power of Contentful with the flexibility of Next.js for a superior headless CMS experience.
+              SyncNext bridges Contentful's powerful content modeling with Next.js performance for faster time-to-market and exceptional digital experiences.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4 px-4">
@@ -237,7 +237,7 @@ function App() {
             <FeatureCard
               icon={<Database className="h-7 w-7" />}
               title="Structured Content"
-              description="Organize your content with custom post types, taxonomies, and relationships."
+              description="Organize your content with custom content types, taxonomies, and relationships."
               image="https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&w=800&q=80"
             />
             <FeatureCard
