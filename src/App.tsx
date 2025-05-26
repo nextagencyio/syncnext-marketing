@@ -7,8 +7,8 @@ function Logo() {
   return (
     <a href="#top" className="flex items-center" aria-label="Back to top">
       <div className="flex items-center gap-2">
-        <Zap className="h-7 md:h-8 text-primary flex-shrink-0" />
-        <span className="font-bold text-lg md:text-xl text-gray-900 tracking-tight leading-none">
+        <Zap className="h-8 md:h-10 text-primary flex-shrink-0" />
+        <span className="font-bold text-xl md:text-2xl text-gray-900 tracking-tight leading-none">
           sync<span className="text-primary">next</span>
         </span>
       </div>
@@ -330,7 +330,7 @@ function App() {
                     <div className="w-3 h-3 rounded-full bg-green-500"></div>
                   </div>
                 </div>
-                <code className="text-sm text-purple-200 block overflow-x-auto">composer create-project syncnext/starter-kit my-project --stability=dev</code>
+                <code className="text-sm text-purple-200 block overflow-x-auto">git clone https://github.com/nextagencyio/syncnext.git</code>
               </div>
               <div className="flex justify-center lg:justify-start">
                 <a
