@@ -88,7 +88,7 @@ function ContactForm({ isOpen, onClose }: ContactFormProps) {
                 Request a quote, schedule a demo, or learn more about our solutions
               </p>
               <form
-                action="https://formspree.io/f/xkgjqobw"
+                action="https://formspree.io/f/xwpodaon"
                 method="POST"
                 onSubmit={handleSubmit}
                 className="space-y-6"
