@@ -224,14 +224,14 @@ function App() {
             />
             <FeatureCard
               icon={<Monitor className="h-7 w-7" />}
-              title="Preview Mode"
-              description="Real-time content previewing with secure authentication and admin toolbar."
+              title="Admin Integration"
+              description="Direct access to Contentful editing interface via integrated admin toolbar."
               image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
             />
             <FeatureCard
               icon={<Terminal className="h-7 w-7" />}
               title="Development Environment"
-              description="Containerized development with DDEV for consistent team environments."
+              description="Simple environment setup with configurable variables for rapid content creation."
               image="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
             />
             <FeatureCard
@@ -320,7 +320,7 @@ function App() {
               <span className="inline-block py-1 px-3 rounded-md bg-purple-100 text-primary text-sm font-medium">Open Source</span>
               <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Source Code Access</h2>
               <p className="text-lg md:text-xl text-gray-600">
-                Explore and contribute to SyncNext directly through GitHub. Get started quickly with our Composer installation command.
+                Explore and contribute to SyncNext directly through GitHub. Get started quickly with our simple installation instructions.
               </p>
               <div className="bg-gray-900 p-4 md:p-5 rounded-lg shadow-xl overflow-hidden mx-auto lg:mx-0 max-w-md lg:max-w-none">
                 <div className="flex items-center mb-3">
@@ -393,9 +393,9 @@ function App() {
                       <span className="font-bold text-sm">2</span>
                     </div>
                     <div className="text-center sm:text-left">
-                      <h4 className="text-lg font-medium text-gray-900 mb-2">Start DDEV environment</h4>
+                      <h4 className="text-lg font-medium text-gray-900 mb-2">Configure environment variables</h4>
                       <div className="bg-gray-900 p-4 rounded-lg mb-3 overflow-x-auto">
-                        <code className="text-sm text-purple-200">cd syncnext<br />ddev start</code>
+                        <code className="text-sm text-purple-200">cd syncnext<br />cp .env.example .env<br />nano .env # Add your Contentful credentials</code>
                       </div>
                     </div>
                   </div>
@@ -405,9 +405,9 @@ function App() {
                       <span className="font-bold text-sm">3</span>
                     </div>
                     <div className="text-center sm:text-left">
-                      <h4 className="text-lg font-medium text-gray-900 mb-2">Install Contentful and dependencies</h4>
+                      <h4 className="text-lg font-medium text-gray-900 mb-2">Generate content structure and sample data</h4>
                       <div className="bg-gray-900 p-4 rounded-lg mb-3 overflow-x-auto">
-                        <code className="text-sm text-purple-200">ddev install --preview</code>
+                        <code className="text-sm text-purple-200">npm install<br />npm run create-all-content</code>
                       </div>
                     </div>
                   </div>
@@ -417,9 +417,9 @@ function App() {
                       <span className="font-bold text-sm">4</span>
                     </div>
                     <div className="text-center sm:text-left">
-                      <h4 className="text-lg font-medium text-gray-900 mb-2">Install and start Next.js frontend</h4>
+                      <h4 className="text-lg font-medium text-gray-900 mb-2">Start the application</h4>
                       <div className="bg-gray-900 p-4 rounded-lg mb-3 overflow-x-auto">
-                        <code className="text-sm text-purple-200">cd nextjs<br />npm install<br />npm run dev</code>
+                        <code className="text-sm text-purple-200">npm run dev</code>
                       </div>
                     </div>
                   </div>
