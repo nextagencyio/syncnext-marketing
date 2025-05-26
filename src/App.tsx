@@ -279,10 +279,10 @@ function App() {
                   icon={<Server className="h-8 w-8" />}
                   title="Contentful Backend"
                   features={[
-                    "Advanced custom fields with Carbon Fields",
-                    "WPGraphQL for API communication",
-                    "Custom post types and taxonomies",
-                    "SyncNext Core plugin"
+                    "Rich content modeling with content types",
+                    "GraphQL API for flexible content delivery",
+                    "Powerful content relationships and references",
+                    "Robust content versioning and publishing workflows"
                   ]}
                 />
               </div>
