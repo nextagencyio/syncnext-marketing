@@ -66,6 +66,6 @@ The build output will be in the `dist` directory.
 ## Related Links
 
 - [SyncNext GitHub Repository](https://github.com/nextagencyio/syncnext)
-- [Contentful](https://wordpress.org/)
+- [Contentful](https://www.contentful.com/)
 - [Next.js](https://nextjs.org/)
 - [DDEV](https://ddev.readthedocs.io/)

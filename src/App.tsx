@@ -237,7 +237,7 @@ function App() {
             <FeatureCard
               icon={<Database className="h-7 w-7" />}
               title="Structured Content"
-              description="Organize your content with custom content types, taxonomies, and relationships."
+              description="Organize your content with flexible content models, rich relationships, and structured fields."
               image="https://images.unsplash.com/photo-1556075798-4825dfaaf498?auto=format&fit=crop&w=800&q=80"
             />
             <FeatureCard
@@ -455,13 +455,13 @@ function App() {
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             <PricingCard
-              title="SyncNext CMS"
+              title="SyncNext Starter"
               price="Free"
               features={[
                 "Full access to open source features",
                 "Community support",
                 "Documentation",
-                "AI development features",
+                "AI features",
               ]}
               ctaText="Get Started"
               ctaLink="#get-started"
@@ -514,7 +514,7 @@ function App() {
             </p>
             <button
               onClick={() => setContactFormOpen(true)}
-              className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 border border-transparent text-base font-medium rounded-lg shadow-lg text-blue-600 bg-white hover:bg-purple-50 transition-colors"
+              className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 border border-transparent text-base font-medium rounded-lg shadow-lg text-primary bg-white hover:bg-purple-50 transition-colors"
             >
               Contact Us
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -564,7 +564,7 @@ function FeatureCard({ icon, title, description, image }: { icon: React.ReactNod
           height="400"
           aria-hidden="true"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-blue-600/70 to-transparent" aria-hidden="true"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-purple-600/70 to-transparent" aria-hidden="true"></div>
         <div className="absolute bottom-4 left-4 right-4">
           <h3 className="text-base sm:text-lg font-semibold text-white">{title}</h3>
         </div>
@@ -630,7 +630,7 @@ function PricingCard({
     >
       {featured && (
         <span
-          className="absolute top-0 right-0 bg-white text-blue-600 text-xs font-semibold uppercase tracking-wider py-1 px-3 rounded-bl-lg rounded-tr-lg"
+          className="absolute top-0 right-0 bg-white text-primary text-xs font-semibold uppercase tracking-wider py-1 px-3 rounded-bl-lg rounded-tr-lg"
           aria-label="Popular plan"
         >
           Popular
@@ -643,7 +643,7 @@ function PricingCard({
       <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8" role="list">
         {features.map((feature, index) => (
           <li key={index} className="flex items-center">
-            <Check className={`h-5 w-5 mr-3 ${featured ? 'text-white' : 'text-blue-600'}`} aria-hidden="true" />
+            <Check className={`h-5 w-5 mr-3 ${featured ? 'text-white' : 'text-primary'}`} aria-hidden="true" />
             <span className={`text-sm sm:text-base ${featured ? 'text-white' : 'text-gray-600'}`}>{feature}</span>
           </li>
         ))}
@@ -654,7 +654,7 @@ function PricingCard({
           className={`
             block w-full py-2 sm:py-3 px-4 sm:px-6 text-center rounded-lg font-medium transition-colors text-sm sm:text-base
             ${featured
-              ? 'bg-white text-blue-600 hover:bg-gray-50'
+              ? 'bg-white text-primary hover:bg-gray-50'
               : 'bg-primary text-white hover:bg-purple-700'
             }
           `}
@@ -668,7 +668,7 @@ function PricingCard({
           className={`
             block w-full py-2 sm:py-3 px-4 sm:px-6 text-center rounded-lg font-medium transition-colors text-sm sm:text-base
             ${featured
-              ? 'bg-white text-blue-600 hover:bg-gray-50'
+              ? 'bg-white text-primary hover:bg-gray-50'
               : 'bg-primary text-white hover:bg-purple-700'
             }
           `}
