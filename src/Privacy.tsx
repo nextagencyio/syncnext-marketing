@@ -1,4 +1,3 @@
-import React from 'react';
 import { ArrowLeft } from 'lucide-react';
 
 function Privacy() {
@@ -21,7 +20,7 @@ function Privacy() {
           <div className="prose prose-blue max-w-none">
             <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">1. Introduction</h2>
             <p className="text-gray-600 mb-4">
-              PressX ("we," "our," or "us") respects your privacy and is committed to protecting it through our compliance with this policy. This Privacy Policy describes the types of information we may collect from you or that you may provide when you visit our website and our practices for collecting, using, maintaining, protecting, and disclosing that information.
+              SyncNext ("we," "our," or "us") respects your privacy and is committed to protecting it through our compliance with this policy. This Privacy Policy describes the types of information we may collect from you or that you may provide when you visit our website and our practices for collecting, using, maintaining, protecting, and disclosing that information.
             </p>
 
             <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">2. Information We Collect</h2>

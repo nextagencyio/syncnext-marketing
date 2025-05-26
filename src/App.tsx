@@ -6,14 +6,12 @@ import { useGoogleAnalytics } from './hooks/useGoogleAnalytics';
 function Logo() {
   return (
     <a href="#top" className="flex items-center" aria-label="Back to top">
-      <img
-        src="/logo.svg"
-        alt="PressX Logo"
-        className="h-6 md:h-8 w-auto"
-        width="120"
-        height="32"
-        loading="eager"
-      />
+      <div className="flex items-center gap-2">
+        <Zap className="h-7 md:h-8 text-primary flex-shrink-0" />
+        <span className="font-bold text-lg md:text-xl text-gray-900 tracking-tight leading-none">
+          sync<span className="text-primary">next</span>
+        </span>
+      </div>
     </a>
   );
 }
@@ -71,14 +69,14 @@ function App() {
           <div className="flex justify-between h-16 items-center">
             <Logo />
             <div className="hidden md:flex items-center space-x-8" role="navigation" aria-label="Desktop navigation">
-              <a href="#features" className="text-gray-700 hover:text-blue-600 transition-colors">Features</a>
-              <a href="#architecture" className="text-gray-700 hover:text-blue-600 transition-colors">Architecture</a>
-              <a href="#github" className="text-gray-700 hover:text-blue-600 transition-colors">GitHub</a>
-              <a href="#get-started" className="text-gray-700 hover:text-blue-600 transition-colors">Get Started</a>
-              <a href="#pricing" className="text-gray-700 hover:text-blue-600 transition-colors">Pricing</a>
+              <a href="#features" className="text-gray-700 hover:text-primary transition-colors">Features</a>
+              <a href="#architecture" className="text-gray-700 hover:text-primary transition-colors">Architecture</a>
+              <a href="#github" className="text-gray-700 hover:text-primary transition-colors">GitHub</a>
+              <a href="#get-started" className="text-gray-700 hover:text-primary transition-colors">Get Started</a>
+              <a href="#pricing" className="text-gray-700 hover:text-primary transition-colors">Pricing</a>
               <button
                 onClick={() => setContactFormOpen(true)}
-                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+                className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg text-white bg-primary hover:bg-purple-700 transition-colors"
                 aria-label="Open contact form"
               >
                 Contact Us
@@ -87,7 +85,7 @@ function App() {
             <div className="md:hidden">
               <button
                 onClick={toggleMobileMenu}
-                className="p-2 rounded-md text-gray-600 hover:text-blue-600 focus:outline-none"
+                className="p-2 rounded-md text-gray-600 hover:text-primary focus:outline-none"
                 aria-expanded={mobileMenuOpen}
                 aria-controls="mobile-menu"
                 aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
@@ -119,25 +117,25 @@ function App() {
             <Logo />
             <button
               onClick={closeMobileMenu}
-              className="p-2 rounded-md text-gray-600 hover:text-blue-600 focus:outline-none"
+              className="p-2 rounded-md text-gray-600 hover:text-primary focus:outline-none"
               aria-label="Close mobile menu"
             >
               <X className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
           <nav className="px-4 pt-6 pb-6 overflow-y-auto max-h-[calc(100vh-4rem)] bg-white" role="navigation" aria-label="Mobile navigation">
-            <a href="#features" onClick={closeMobileMenu} className="block py-3 text-base font-medium text-gray-700 hover:text-blue-600 border-b border-gray-100">Features</a>
-            <a href="#architecture" onClick={closeMobileMenu} className="block py-3 text-base font-medium text-gray-700 hover:text-blue-600 border-b border-gray-100">Architecture</a>
-            <a href="#github" onClick={closeMobileMenu} className="block py-3 text-base font-medium text-gray-700 hover:text-blue-600 border-b border-gray-100">GitHub</a>
-            <a href="#get-started" onClick={closeMobileMenu} className="block py-3 text-base font-medium text-gray-700 hover:text-blue-600 border-b border-gray-100">Get Started</a>
-            <a href="#pricing" onClick={closeMobileMenu} className="block py-3 text-base font-medium text-gray-700 hover:text-blue-600 border-b border-gray-100">Pricing</a>
+            <a href="#features" onClick={closeMobileMenu} className="block py-3 text-base font-medium text-gray-700 hover:text-primary border-b border-gray-100">Features</a>
+            <a href="#architecture" onClick={closeMobileMenu} className="block py-3 text-base font-medium text-gray-700 hover:text-primary border-b border-gray-100">Architecture</a>
+            <a href="#github" onClick={closeMobileMenu} className="block py-3 text-base font-medium text-gray-700 hover:text-primary border-b border-gray-100">GitHub</a>
+            <a href="#get-started" onClick={closeMobileMenu} className="block py-3 text-base font-medium text-gray-700 hover:text-primary border-b border-gray-100">Get Started</a>
+            <a href="#pricing" onClick={closeMobileMenu} className="block py-3 text-base font-medium text-gray-700 hover:text-primary border-b border-gray-100">Pricing</a>
             <div className="pt-6">
               <button
                 onClick={() => {
                   closeMobileMenu();
                   setContactFormOpen(true);
                 }}
-                className="w-full inline-flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+                className="w-full inline-flex items-center justify-center px-4 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-primary hover:bg-purple-700 transition-colors"
                 aria-label="Open contact form"
               >
                 Contact Us
@@ -148,22 +146,22 @@ function App() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-32 pb-20 relative overflow-hidden bg-blue-50">
+      <section className="pt-32 pb-20 relative overflow-hidden bg-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 md:pt-16 relative">
           <div className="text-center">
-            <span className="inline-flex items-center px-4 py-1 rounded-full text-sm font-medium bg-blue-100 text-blue-600 mb-6">
+            <span className="inline-flex items-center px-4 py-1 rounded-full text-sm font-medium bg-purple-100 text-primary mb-6">
               Headless CMS Starter Kit
             </span>
             <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl lg:text-7xl">
-              <span className="block bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-transparent bg-clip-text pb-2 animate-gradient bg-[length:200%_auto]">Modern Headless WordPress</span>
+              <span className="block bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-transparent bg-clip-text pb-2 animate-gradient bg-[length:200%_auto]">Modern Headless Contentful</span>
               <span className="block">Made Simple</span>
             </h1>
             <p className="mt-6 max-w-md mx-auto text-base md:text-lg text-gray-600 sm:max-w-3xl px-4">
-              PressX combines the power of WordPress with the flexibility of Next.js for a superior headless CMS experience.
+              SyncNext combines the power of Contentful with the flexibility of Next.js for a superior headless CMS experience.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row justify-center gap-4 px-4">
-              <a href="#get-started" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 shadow-lg hover:shadow-xl transition-all">
+              <a href="#get-started" className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-primary hover:bg-purple-700 shadow-lg hover:shadow-xl transition-all">
                 Get Started
                 <ArrowRight className="ml-2 h-5 w-5" />
               </a>
@@ -175,8 +173,8 @@ function App() {
 
             {/* Key Benefits */}
             <div className="mt-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-5xl mx-auto px-4">
-              <div className="bg-white p-6 rounded-xl border border-blue-100 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 duration-300">
-                <div className="flex items-center justify-center w-14 h-14 mx-auto mb-4 rounded-full bg-blue-100 text-blue-600">
+              <div className="bg-white p-6 rounded-xl border border-purple-100 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 duration-300">
+                <div className="flex items-center justify-center w-14 h-14 mx-auto mb-4 rounded-full bg-purple-100 text-primary">
                   <Split className="h-7 w-7" />
                 </div>
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">Decoupled Architecture</h2>
@@ -184,8 +182,8 @@ function App() {
                   Separate your front-end and back-end for maximum flexibility and better performance.
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-xl border border-blue-100 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 duration-300">
-                <div className="flex items-center justify-center w-14 h-14 mx-auto mb-4 rounded-full bg-blue-100 text-blue-600">
+              <div className="bg-white p-6 rounded-xl border border-purple-100 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 duration-300">
+                <div className="flex items-center justify-center w-14 h-14 mx-auto mb-4 rounded-full bg-purple-100 text-primary">
                   <Zap className="h-7 w-7" />
                 </div>
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">Lightning-Fast Loading</h2>
@@ -193,8 +191,8 @@ function App() {
                   Deliver exceptional user experiences with optimized load times and performance.
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-xl border border-blue-100 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 duration-300">
-                <div className="flex items-center justify-center w-14 h-14 mx-auto mb-4 rounded-full bg-blue-100 text-blue-600">
+              <div className="bg-white p-6 rounded-xl border border-purple-100 shadow-md hover:shadow-xl transition-all transform hover:-translate-y-1 duration-300">
+                <div className="flex items-center justify-center w-14 h-14 mx-auto mb-4 rounded-full bg-purple-100 text-primary">
                   <Code className="h-7 w-7" />
                 </div>
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">Developer Friendly</h2>
@@ -209,12 +207,12 @@ function App() {
 
       {/* Features Section */}
       <section id="features" className="py-16 md:py-24 bg-white relative">
-        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent"></div>
+        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-purple-200 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-            <span className="inline-block py-1 px-3 rounded-md bg-blue-100 text-blue-600 text-sm font-medium mb-3">Features</span>
+            <span className="inline-block py-1 px-3 rounded-md bg-purple-100 text-primary text-sm font-medium mb-3">Features</span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Powerful Tools for Modern Web Development</h2>
-            <p className="text-lg md:text-xl text-gray-600">Everything you need to build exceptional headless WordPress experiences.</p>
+            <p className="text-lg md:text-xl text-gray-600">Everything you need to build exceptional headless Contentful experiences.</p>
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 px-2 sm:px-0">
@@ -259,11 +257,11 @@ function App() {
       </section>
 
       {/* Architecture Section */}
-      <section id="architecture" className="py-16 md:py-24 bg-blue-50 relative">
-        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent"></div>
+      <section id="architecture" className="py-16 md:py-24 bg-purple-50 relative">
+        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-purple-200 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-            <span className="inline-block py-1 px-3 rounded-md bg-blue-100 text-blue-600 text-sm font-medium mb-3">Architecture</span>
+            <span className="inline-block py-1 px-3 rounded-md bg-purple-100 text-primary text-sm font-medium mb-3">Architecture</span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Modern Headless Architecture</h2>
             <p className="text-lg md:text-xl text-gray-600">A carefully designed system that balances power, flexibility, and ease of use.</p>
           </div>
@@ -279,12 +277,12 @@ function App() {
                 />
                 <ArchitectureCard
                   icon={<Server className="h-8 w-8" />}
-                  title="WordPress Backend"
+                  title="Contentful Backend"
                   features={[
                     "Advanced custom fields with Carbon Fields",
                     "WPGraphQL for API communication",
                     "Custom post types and taxonomies",
-                    "PressX Core plugin"
+                    "SyncNext Core plugin"
                   ]}
                 />
               </div>
@@ -315,14 +313,14 @@ function App() {
 
       {/* GitHub Section */}
       <section id="github" className="py-16 md:py-24 bg-white relative">
-        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent"></div>
+        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-purple-200 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             <div className="space-y-6 md:space-y-8 text-center lg:text-left">
-              <span className="inline-block py-1 px-3 rounded-md bg-blue-100 text-blue-600 text-sm font-medium">Open Source</span>
+              <span className="inline-block py-1 px-3 rounded-md bg-purple-100 text-primary text-sm font-medium">Open Source</span>
               <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900">Source Code Access</h2>
               <p className="text-lg md:text-xl text-gray-600">
-                Explore and contribute to PressX directly through GitHub. Get started quickly with our Composer installation command.
+                Explore and contribute to SyncNext directly through GitHub. Get started quickly with our Composer installation command.
               </p>
               <div className="bg-gray-900 p-4 md:p-5 rounded-lg shadow-xl overflow-hidden mx-auto lg:mx-0 max-w-md lg:max-w-none">
                 <div className="flex items-center mb-3">
@@ -332,14 +330,14 @@ function App() {
                     <div className="w-3 h-3 rounded-full bg-green-500"></div>
                   </div>
                 </div>
-                <code className="text-sm text-blue-200 block overflow-x-auto">composer create-project pressx/starter-kit my-project --stability=dev</code>
+                <code className="text-sm text-purple-200 block overflow-x-auto">composer create-project syncnext/starter-kit my-project --stability=dev</code>
               </div>
               <div className="flex justify-center lg:justify-start">
                 <a
-                  href="https://github.com/nextagencyio/pressx"
+                  href="https://github.com/nextagencyio/syncnext"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-lg text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+                  className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-lg text-white bg-primary hover:bg-purple-700 transition-colors"
                 >
                   <Github className="h-5 w-5 mr-2" />
                   View on GitHub
@@ -361,14 +359,14 @@ function App() {
       </section>
 
       {/* Get Started Section */}
-      <section id="get-started" className="py-16 md:py-24 bg-blue-50 relative">
-        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent"></div>
+      <section id="get-started" className="py-16 md:py-24 bg-purple-50 relative">
+        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-purple-200 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-            <span className="inline-block py-1 px-3 rounded-md bg-blue-100 text-blue-600 text-sm font-medium mb-3">Get Started</span>
+            <span className="inline-block py-1 px-3 rounded-md bg-purple-100 text-primary text-sm font-medium mb-3">Get Started</span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Quick Setup Guide</h2>
             <p className="text-lg md:text-xl text-gray-600">
-              Follow these steps to get up and running with PressX in minutes
+              Follow these steps to get up and running with SyncNext in minutes
             </p>
           </div>
 
@@ -379,49 +377,49 @@ function App() {
 
                 <div className="space-y-6">
                   <div className="flex flex-col sm:flex-row sm:items-start">
-                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600 mb-3 sm:mb-0 sm:mt-1 sm:mr-4 mx-auto sm:mx-0 flex-shrink-0">
+                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-purple-100 text-primary mb-3 sm:mb-0 sm:mt-1 sm:mr-4 mx-auto sm:mx-0 flex-shrink-0">
                       <span className="font-bold text-sm">1</span>
                     </div>
                     <div className="text-center sm:text-left">
                       <h4 className="text-lg font-medium text-gray-900 mb-2">Clone the repository</h4>
                       <div className="bg-gray-900 p-4 rounded-lg mb-3 overflow-x-auto">
-                        <code className="text-sm text-blue-200">git clone https://github.com/nextagencyio/pressx.git</code>
+                        <code className="text-sm text-purple-200">git clone https://github.com/nextagencyio/syncnext.git</code>
                       </div>
                     </div>
                   </div>
 
                   <div className="flex flex-col sm:flex-row sm:items-start">
-                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600 mb-3 sm:mb-0 sm:mt-1 sm:mr-4 mx-auto sm:mx-0 flex-shrink-0">
+                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-purple-100 text-primary mb-3 sm:mb-0 sm:mt-1 sm:mr-4 mx-auto sm:mx-0 flex-shrink-0">
                       <span className="font-bold text-sm">2</span>
                     </div>
                     <div className="text-center sm:text-left">
                       <h4 className="text-lg font-medium text-gray-900 mb-2">Start DDEV environment</h4>
                       <div className="bg-gray-900 p-4 rounded-lg mb-3 overflow-x-auto">
-                        <code className="text-sm text-blue-200">cd pressx<br />ddev start</code>
+                        <code className="text-sm text-purple-200">cd syncnext<br />ddev start</code>
                       </div>
                     </div>
                   </div>
 
                   <div className="flex flex-col sm:flex-row sm:items-start">
-                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600 mb-3 sm:mb-0 sm:mt-1 sm:mr-4 mx-auto sm:mx-0 flex-shrink-0">
+                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-purple-100 text-primary mb-3 sm:mb-0 sm:mt-1 sm:mr-4 mx-auto sm:mx-0 flex-shrink-0">
                       <span className="font-bold text-sm">3</span>
                     </div>
                     <div className="text-center sm:text-left">
-                      <h4 className="text-lg font-medium text-gray-900 mb-2">Install WordPress and dependencies</h4>
+                      <h4 className="text-lg font-medium text-gray-900 mb-2">Install Contentful and dependencies</h4>
                       <div className="bg-gray-900 p-4 rounded-lg mb-3 overflow-x-auto">
-                        <code className="text-sm text-blue-200">ddev install --preview</code>
+                        <code className="text-sm text-purple-200">ddev install --preview</code>
                       </div>
                     </div>
                   </div>
 
                   <div className="flex flex-col sm:flex-row sm:items-start">
-                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-blue-100 text-blue-600 mb-3 sm:mb-0 sm:mt-1 sm:mr-4 mx-auto sm:mx-0 flex-shrink-0">
+                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-purple-100 text-primary mb-3 sm:mb-0 sm:mt-1 sm:mr-4 mx-auto sm:mx-0 flex-shrink-0">
                       <span className="font-bold text-sm">4</span>
                     </div>
                     <div className="text-center sm:text-left">
                       <h4 className="text-lg font-medium text-gray-900 mb-2">Install and start Next.js frontend</h4>
                       <div className="bg-gray-900 p-4 rounded-lg mb-3 overflow-x-auto">
-                        <code className="text-sm text-blue-200">cd nextjs<br />npm install<br />npm run dev</code>
+                        <code className="text-sm text-purple-200">cd nextjs<br />npm install<br />npm run dev</code>
                       </div>
                     </div>
                   </div>
@@ -429,10 +427,10 @@ function App() {
 
                 <div className="mt-8 flex justify-center sm:justify-start">
                   <a
-                    href="https://github.com/nextagencyio/pressx"
+                    href="https://github.com/nextagencyio/syncnext"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-md text-white bg-blue-600 hover:bg-blue-700 transition-colors"
+                    className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg shadow-md text-white bg-primary hover:bg-purple-700 transition-colors"
                   >
                     <Github className="h-5 w-5 mr-2" />
                     View Full Documentation
@@ -446,18 +444,18 @@ function App() {
 
       {/* Pricing Section */}
       <section id="pricing" className="py-16 md:py-24 bg-white relative">
-        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-blue-200 to-transparent"></div>
+        <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-purple-200 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-            <span className="inline-block py-1 px-3 rounded-md bg-blue-100 text-blue-600 text-sm font-medium mb-3">Pricing</span>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Unlock the Full Potential of PressX</h2>
+            <span className="inline-block py-1 px-3 rounded-md bg-purple-100 text-primary text-sm font-medium mb-3">Pricing</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-4">Unlock the Full Potential of SyncNext</h2>
             <p className="text-lg md:text-xl text-gray-600">
-              Tailor your PressX experience: Choose between self-managed and full-service options
+              Tailor your SyncNext experience: Choose between self-managed and full-service options
             </p>
           </div>
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             <PricingCard
-              title="PressX CMS"
+              title="SyncNext CMS"
               price="Free"
               features={[
                 "Full access to open source features",
@@ -488,7 +486,7 @@ function App() {
               price="Custom Pricing"
               features={[
                 "Custom builds for agencies",
-                "PressX hands-on training",
+                "SyncNext hands-on training",
                 "Consulting services",
                 "Co-selling & partnerships",
               ]}
@@ -502,21 +500,21 @@ function App() {
       </section>
 
       {/* CTA Section */}
-      <section id="cta" className="py-12 md:py-16 bg-blue-600 relative overflow-hidden">
+      <section id="cta" className="py-12 md:py-16 bg-primary relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           {/* Removing the SVG as requested */}
         </div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-4">
-              Ready to supercharge your WordPress development?
+              Ready to supercharge your Contentful development?
             </h2>
-            <p className="text-lg md:text-xl text-blue-100 mb-8">
-              Start building exceptional digital experiences with PressX today.
+            <p className="text-lg md:text-xl text-purple-100 mb-8">
+              Start building exceptional digital experiences with SyncNext today.
             </p>
             <button
               onClick={() => setContactFormOpen(true)}
-              className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 border border-transparent text-base font-medium rounded-lg shadow-lg text-blue-600 bg-white hover:bg-blue-50 transition-colors"
+              className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 border border-transparent text-base font-medium rounded-lg shadow-lg text-blue-600 bg-white hover:bg-purple-50 transition-colors"
             >
               Contact Us
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -531,20 +529,20 @@ function App() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-8 md:mb-0">
               <Logo />
-              <p className="text-gray-500 mt-4 text-center md:text-left">Modern Headless WordPress Solution</p>
+              <p className="text-gray-500 mt-4 text-center md:text-left">Modern Headless Contentful Solution</p>
             </div>
             <div className="flex flex-col items-center md:items-end">
               <div className="flex space-x-6">
-                <a href="https://github.com/nextagencyio/pressx" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-blue-600 transition-colors">
+                <a href="https://github.com/nextagencyio/syncnext" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-primary transition-colors">
                   <Github className="h-6 w-6" />
                 </a>
               </div>
               <div className="mt-6 flex flex-wrap justify-center md:justify-end gap-4 md:gap-8">
-                <a href="/terms" className="text-gray-600 hover:text-blue-600 transition-colors">Terms</a>
-                <a href="/privacy" className="text-gray-600 hover:text-blue-600 transition-colors">Privacy</a>
-                <a href="#top" className="text-gray-600 hover:text-blue-600 transition-colors">Back to Top</a>
+                <a href="/terms" className="text-gray-600 hover:text-primary transition-colors">Terms</a>
+                <a href="/privacy" className="text-gray-600 hover:text-primary transition-colors">Privacy</a>
+                <a href="#top" className="text-gray-600 hover:text-primary transition-colors">Back to Top</a>
               </div>
-              <p className="text-gray-400 text-sm mt-6">&copy; {new Date().getFullYear()} PressX. All rights reserved.</p>
+              <p className="text-gray-400 text-sm mt-6">&copy; {new Date().getFullYear()} SyncNext. All rights reserved.</p>
             </div>
           </div>
         </div>
@@ -572,7 +570,7 @@ function FeatureCard({ icon, title, description, image }: { icon: React.ReactNod
         </div>
       </div>
       <div className="p-4 sm:p-6">
-        <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 mb-4" aria-hidden="true">
+        <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-purple-100 text-primary mb-4" aria-hidden="true">
           {icon}
         </div>
         <p className="text-sm sm:text-base text-gray-600">{description}</p>
@@ -585,7 +583,7 @@ function ArchitectureCard({ icon, title, features }: { icon: React.ReactNode; ti
   return (
     <div className="bg-white p-6 sm:p-8 rounded-xl shadow-lg border hover:shadow-xl transition-all duration-300" role="article">
       <div className="flex flex-col sm:flex-row sm:items-center mb-6">
-        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 mx-auto sm:mx-0 sm:mr-4 mb-3 sm:mb-0" aria-hidden="true">
+        <div className="w-12 h-12 flex items-center justify-center rounded-full bg-purple-100 text-primary mx-auto sm:mx-0 sm:mr-4 mb-3 sm:mb-0" aria-hidden="true">
           {icon}
         </div>
         <h3 className="text-center sm:text-left text-xl font-semibold text-gray-900">{title}</h3>
@@ -593,7 +591,7 @@ function ArchitectureCard({ icon, title, features }: { icon: React.ReactNode; ti
       <ul className="space-y-3" role="list">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start text-gray-600">
-            <div className="mt-1.5 h-1.5 w-1.5 bg-blue-500 rounded-full mr-3" aria-hidden="true" />
+            <div className="mt-1.5 h-1.5 w-1.5 bg-purple-500 rounded-full mr-3" aria-hidden="true" />
             {feature}
           </li>
         ))}
@@ -624,7 +622,7 @@ function PricingCard({
       className={`
         rounded-xl p-6 sm:p-8 relative transform transition-all duration-300 hover:scale-105
         ${featured
-          ? 'bg-blue-600 text-white shadow-xl'
+          ? 'bg-primary text-white shadow-xl'
           : 'bg-white text-gray-900 border border-gray-200 shadow-md hover:shadow-xl'
         }
       `}
@@ -657,7 +655,7 @@ function PricingCard({
             block w-full py-2 sm:py-3 px-4 sm:px-6 text-center rounded-lg font-medium transition-colors text-sm sm:text-base
             ${featured
               ? 'bg-white text-blue-600 hover:bg-gray-50'
-              : 'bg-blue-600 text-white hover:bg-blue-700'
+              : 'bg-primary text-white hover:bg-purple-700'
             }
           `}
           aria-label={`${ctaText} for ${title} plan`}
@@ -671,7 +669,7 @@ function PricingCard({
             block w-full py-2 sm:py-3 px-4 sm:px-6 text-center rounded-lg font-medium transition-colors text-sm sm:text-base
             ${featured
               ? 'bg-white text-blue-600 hover:bg-gray-50'
-              : 'bg-blue-600 text-white hover:bg-blue-700'
+              : 'bg-primary text-white hover:bg-purple-700'
             }
           `}
           aria-label={`${ctaText} for ${title} plan`}

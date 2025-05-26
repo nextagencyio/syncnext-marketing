@@ -1,10 +1,10 @@
-# PressX Marketing Website
+# SyncNext Marketing Website
 
-A modern, responsive single-page marketing website for the PressX headless WordPress starter kit.
+A modern, responsive single-page marketing website for the SyncNext headless Contentful starter kit.
 
-## About PressX
+## About SyncNext
 
-PressX is a modern headless WordPress setup that combines the power of WordPress as a backend CMS with Next.js for the frontend, all containerized using DDEV for consistent development environments.
+SyncNext is a modern headless Contentful setup that combines the power of Contentful as a backend CMS with Next.js for the frontend, all containerized using DDEV for consistent development environments.
 
 ## Features
 
@@ -25,8 +25,8 @@ PressX is a modern headless WordPress setup that combines the power of WordPress
 
 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/pressx-marketing.git
-cd pressx-marketing
+git clone https://github.com/yourusername/syncnext-marketing.git
+cd syncnext-marketing
 ```
 
 2. Install dependencies
@@ -65,7 +65,7 @@ The build output will be in the `dist` directory.
 
 ## Related Links
 
-- [PressX GitHub Repository](https://github.com/nextagencyio/pressx)
-- [WordPress](https://wordpress.org/)
+- [SyncNext GitHub Repository](https://github.com/nextagencyio/syncnext)
+- [Contentful](https://wordpress.org/)
 - [Next.js](https://nextjs.org/)
 - [DDEV](https://ddev.readthedocs.io/)

@@ -21,32 +21,32 @@ function Terms() {
           <div className="prose prose-blue max-w-none">
             <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">1. Introduction</h2>
             <p className="text-gray-600 mb-4">
-              Welcome to PressX. These Terms of Service govern your use of our website and services.
+              Welcome to SyncNext. These Terms of Service govern your use of our website and services.
             </p>
 
             <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">2. Acceptance of Terms</h2>
             <p className="text-gray-600 mb-4">
-              By accessing or using PressX, you agree to be bound by these Terms of Service.
+              By accessing or using SyncNext, you agree to be bound by these Terms of Service.
             </p>
 
             <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">3. Description of Service</h2>
             <p className="text-gray-600 mb-4">
-              PressX provides a headless WordPress solution that combines WordPress as a backend CMS with Next.js for the frontend.
+              SyncNext provides a headless Contentful solution that combines Contentful as a backend CMS with Next.js for the frontend.
             </p>
 
             <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">4. User Conduct</h2>
             <p className="text-gray-600 mb-4">
-              You agree to use PressX only for lawful purposes and in accordance with these Terms of Service.
+              You agree to use SyncNext only for lawful purposes and in accordance with these Terms of Service.
             </p>
 
             <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">5. Intellectual Property</h2>
             <p className="text-gray-600 mb-4">
-              All content, features, and functionality of PressX, including but not limited to all information, software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof, are owned by PressX, its licensors, or other providers.
+              All content, features, and functionality of SyncNext, including but not limited to all information, software, text, displays, images, video, and audio, and the design, selection, and arrangement thereof, are owned by SyncNext, its licensors, or other providers.
             </p>
 
             <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">6. Third-Party Links</h2>
             <p className="text-gray-600 mb-4">
-              Our service may contain links to third-party websites or services that are not owned or controlled by PressX.
+              Our service may contain links to third-party websites or services that are not owned or controlled by SyncNext.
             </p>
 
             <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">7. Termination</h2>
@@ -56,7 +56,7 @@ function Terms() {
 
             <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">8. Limitation of Liability</h2>
             <p className="text-gray-600 mb-4">
-              In no event shall PressX be liable for any indirect, incidental, special, consequential, or punitive damages.
+              In no event shall SyncNext be liable for any indirect, incidental, special, consequential, or punitive damages.
             </p>
 
             <h2 className="text-xl font-semibold text-gray-900 mt-8 mb-4">9. Changes to Terms</h2>
